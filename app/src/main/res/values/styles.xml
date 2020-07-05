@@ -1,0 +1,55 @@
+<resources>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog" >
+        <item name="windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">#00000000</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="defaultRpImageview">@style/defaultRpImageview</item>
+    </style>
+
+    <style name="defaultRpImageview">
+        <item name="rpWidth">6</item>
+        <item name="boderColor">@color/white</item>
+        <item name="bitmap">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="PixelP" parent="AppTheme.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="DefaultBannerConfigs">
+        <item name="retryNumber">0</item>
+        <item name="closeEnable">true</item>
+        <item name="heightMode">BANNER_HEIGHT_50</item>
+        <item name="placementId">@string/fb_banner_id</item>
+    </style>
+
+    <style name="PointTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomOpenDialogAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/show_bottomnotify</item>
+        <item name="android:windowExitAnimation">@anim/dismiss_bottomnotify</item>
+    </style>
+</resources>

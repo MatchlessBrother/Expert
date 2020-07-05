@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="8dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="8dp"
+    android:id="@+id/notifyall"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/notify_bg">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/launcher"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/clean_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/clean_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/note_ic_clean"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="clean"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/clean_tv"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/clean_icon"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            tools:text="8"
+            android:textSize="9sp"
+            android:minWidth="13dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="-8dp"
+            android:textColor="@color/white"
+            android:id="@+id/clean_red_point"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/clean_icon"
+            android:background="@drawable/shape_red_point"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/boost_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/boost_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/note_ic_boost"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="boost"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/boost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boost_icon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            tools:text="8"
+            android:textSize="9sp"
+            android:minWidth="13dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="-8dp"
+            android:textColor="@color/white"
+            android:id="@+id/boost_red_point"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/boost_icon"
+            android:background="@drawable/shape_red_point"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/cpu_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cpu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/note_ic_cpu"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="cpu"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/cpu_tv"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/cpu_icon"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            tools:text="8"
+            android:textSize="9sp"
+            android:minWidth="13dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_height="13dp"
+            android:id="@+id/cpu_red_point"
+            android:layout_marginLeft="-2dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/cpu_icon"
+            android:background="@drawable/shape_red_point"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/battery_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/battery_icon"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/note_ic_battery"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="battery"
+            android:textSize="12sp"
+            android:id="@+id/battery_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/battery_icon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            tools:text="8"
+            android:textSize="9sp"
+            android:minWidth="13dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="-3dp"
+            android:textColor="@color/white"
+            android:id="@+id/battery_red_point"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/battery_icon"
+            android:background="@drawable/shape_red_point"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/flashlight_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/flashlight_icon"
+            android:src="@mipmap/note_ic_flashlight"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:text="flashlight"
+            android:id="@+id/flashlight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flashlight_icon"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

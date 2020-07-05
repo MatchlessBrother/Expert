@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/battery_item_all"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="6dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/battery_img"
+        tools:src="@mipmap/ic_helper"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="24dp"/>
+
+    <TextView
+        android:layout_below="@id/battery_img"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:layout_marginRight="12dp"
+        android:id="@+id/battery_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textSize="16sp"
+        tools:text="Oh,My God!"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        tools:src="@mipmap/ic_unseleted"
+        android:id="@+id/battery_select"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/darkblue"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/battery_img"/>
+
+</LinearLayout>

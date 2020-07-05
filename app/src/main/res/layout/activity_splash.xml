@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_sp_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <ImageView
+            android:src="@mipmap/splash_launch_icon"
+            android:layout_height="160dp"
+            android:layout_width="160dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ffC0DAF1"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_init"/>
+
+        <ProgressBar
+            android:max="100"
+            tools:progress="10"
+            android:layout_height="12dp"
+            android:id="@+id/progressbar"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/splash_progress"/>
+    </LinearLayout>
+</LinearLayout>

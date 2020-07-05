@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" >
+
+    <androidx.viewpager.widget.ViewPager
+        android:fadingEdge="none"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:fadingEdgeLength="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/deviceinfo_viewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/deviceinfo_line"/>
+
+    <View
+        android:layout_height="1px"
+        android:background="#ffaaaaaa"
+        android:id="@+id/deviceinfo_line"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/deviceinfo_tablayout"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:visibility="gone"
+        app:tabIndicatorHeight="0dp"
+        android:layout_height="60dp"
+        app:tabBackground="@color/gray"
+        android:layout_width="match_parent"
+        android:id="@+id/deviceinfo_tablayout"
+        android:background="@color/transparent"
+        app:tabRippleColor="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabIndicatorColor="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:colorControlHighlight="@color/transparent"/>
+</LinearLayout>

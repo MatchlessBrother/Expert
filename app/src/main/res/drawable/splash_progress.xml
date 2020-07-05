@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--作为整体背景图片-->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="6dp" />
+            <solid android:color="#eeeeee"/>
+        </shape>
+    </item>
+
+    <!--进度状态的背景-->
+    <!--@android:id/secondaryProgress   第二进度和progress是类似的，有需要可以定义-->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="6dp" />
+                <gradient
+                    android:endColor="#ff13FFBD"
+                    android:startColor="#ffAAFFA9"
+                    android:centerColor="#ff5CFFB4"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

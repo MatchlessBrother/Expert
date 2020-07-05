@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 圆角矩形默认背景颜色 -->
+    <solid android:color="#FFFFFFFF"/>
+
+    <!-- 圆角矩形四个顶角的度数-->
+    <corners android:radius="6dp"/>
+</shape>

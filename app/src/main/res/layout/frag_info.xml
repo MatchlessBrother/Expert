@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/common_top_bg">
+
+        <View
+            android:id="@+id/statebar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="44dp"
+            android:scaleType="centerInside"
+            android:id="@+id/frag_info_menu"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:text="@string/deviceinfo"
+            android:textSize="22sp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="12dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_help"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/basicinfo"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:id="@+id/info_basic"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#88eeeeee"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/status"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/info_status">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="6dp"
+                        android:layout_height="wrap_content">
+
+                        <com.expert.cleanup.view.NewCircleProgressView
+                            app:isTracked="true"
+                            app:track_width="8dp"
+                            app:start_progress="0"
+                            app:end_progress="100"
+                            app:circleBroken="false"
+                            app:end_color="#ff408DFE"
+                            app:progressDuration="2000"
+                            app:start_color="#ff2BC2D4"
+                            android:layout_width="160dp"
+                            app:progressTextSize="36sp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            app:trackColor="@color/lightgray"
+                            android:id="@+id/info_circle_ram"
+                            app:progressTextColor="#88000000"
+                            android:layout_centerHorizontal="true"
+                            app:animateType="OvershootInterpolator"/>
+
+                        <TextView
+                            android:text="@string/ram"
+                            android:textSize="16sp"
+                            android:textColor="#88000000"
+                            android:layout_marginBottom="33dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/info_circle_ram_info"
+                            android:layout_alignBottom="@id/info_circle_ram"/>
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/boost"
+                            android:textColor="#ffffffff"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/info_circle_ram_btn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/info_circle_ram_info"
+                            android:background="@drawable/shape_btn_green"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_height="wrap_content">
+
+                        <com.expert.cleanup.view.NewCircleProgressView
+                            app:isTracked="true"
+                            app:track_width="8dp"
+                            app:start_progress="0"
+                            app:end_progress="100"
+                            app:circleBroken="false"
+                            app:end_color="#ff408DFE"
+                            app:progressDuration="2000"
+                            app:start_color="#ff2BC2D4"
+                            app:progressTextSize="36sp"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            app:trackColor="@color/lightgray"
+                            android:id="@+id/info_circle_rom"
+                            app:progressTextColor="#88000000"
+                            android:layout_centerHorizontal="true"
+                            app:animateType="OvershootInterpolator"/>
+
+                        <TextView
+                            android:text="@string/rom"
+                            android:textSize="16sp"
+                            android:textColor="#88000000"
+                            android:layout_marginBottom="33dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/info_circle_rom_info"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignBottom="@id/info_circle_rom"/>
+
+                        <TextView
+                            android:text="@string/clean"
+                            android:textSize="16sp"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="4dp"
+                            android:textColor="#ffffffff"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/info_circle_rom_btn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/info_circle_rom_info"
+                            android:background="@drawable/shape_btn_green"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:textColor="@color/font_green"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="Operating System"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:background="@drawable/shape_round_white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/os_container"
+                    android:orientation="vertical"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:textColor="@color/font_green"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:text="Product"/>
+
+                <LinearLayout
+                    android:background="@drawable/shape_round_white"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_container"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:textColor="@color/font_green"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Battery"/>
+
+                <LinearLayout
+                    android:background="@drawable/shape_round_white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/battery_container"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:textColor="@color/font_green"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Screen"/>
+
+                <LinearLayout
+                    android:background="@drawable/shape_round_white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/screen_container"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:textColor="@color/font_green"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="CPU"/>
+
+                <LinearLayout
+                    android:background="@drawable/shape_round_white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/cpu_container"
+                    android:orientation="vertical"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

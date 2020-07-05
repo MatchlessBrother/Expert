@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/animator_bg"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/note_title_all"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/statebar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/note_menu"
+                android:layout_width="44dp"
+                android:scaleType="centerInside"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_back"/>
+
+            <TextView
+                android:id="@+id/note_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="@string/safetytips"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_help"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="1"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/note_num"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:textColor="@color/font_green"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_white_ring"/>
+
+            <LinearLayout
+                android:paddingTop="12dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:orientation="vertical"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_white">
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Do you know ?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_green"/>
+
+                <View
+                    android:layout_height="1px"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/font_green"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/note_content"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_green"
+                    android:minHeight="80dp"
+                    android:text="Be cautious of tests, lucky draw, and horoscope online.\n\nMost result of those tests are nonsense and lack of scientific basis. It just causes confidential and privacy leak." />
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="right"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="20dp"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="80dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text="5"
+                    android:visibility="visible"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/note_back_tv"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/font_gray"
+                    android:background="@drawable/shape_gray"/>
+
+                <ImageView
+                    android:rotation="180"
+                    android:visibility="gone"
+                    android:id="@+id/note_back"
+                    android:scaleType="fitCenter"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/ic_next_true"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/note_next"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@mipmap/ic_next_true"/>
+
+                <TextView
+                    android:text="5"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/note_next_tv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:textColor="@color/font_gray"
+                    android:background="@drawable/shape_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+</LinearLayout>

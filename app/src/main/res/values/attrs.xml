@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Banner">
+        <attr name="heightMode" format="enum">
+            <enum name="BANNER_HEIGHT_50" value="0"/>
+            <enum name="BANNER_HEIGHT_90" value="1"/>
+            <enum name="RECTANGLE_HEIGHT_250" value="2"/>
+        </attr>
+        <attr name="placementId" format="string"/>
+        <attr name="closeEnable" format="boolean"/>
+        <attr name="retryNumber" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RpImageview">
+        <attr name="rpWidth" format="integer"/>
+        <attr name="boderColor" format="color"/>
+        <attr name="bitmap" format="reference|color"/>
+    </declare-styleable>
+
+    <attr name="defaultRpImageview" format="reference"/>
+
+</resources>

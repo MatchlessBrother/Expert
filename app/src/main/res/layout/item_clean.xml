@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:id="@+id/clean_item_all"
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/clean_img"
+        tools:src="@mipmap/ic_helper"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="24dp"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:background="@drawable/shape_gray_round"
+            android:layout_alignRight="@id/clean_img"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="-6dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:id="@+id/clean_garbage"
+            android:paddingBottom="2dp"
+            android:ellipsize="middle"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:paddingTop="2dp"
+            android:textSize="10sp"
+            tools:text="11.66mb"/>
+
+        <TextView
+            android:layout_below="@id/battery_img"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkblue"
+            android:layout_width="match_parent"
+            android:id="@+id/clean_name"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textSize="15sp"
+            tools:text="Oh,My God!"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/clean_select"
+        tools:src="@mipmap/ic_unseleted"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/darkblue"
+        android:layout_alignParentTop="true"/>
+</LinearLayout>

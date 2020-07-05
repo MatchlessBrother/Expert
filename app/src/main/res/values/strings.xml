@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name" translatable="false">Expert Cleanup</string>
+    <string name="fb_app_id" translatable="false">237790734180100</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb00001</string>
+    <string name="fb_banner_id" translatable="false">fb00001</string>
+    <string name="fb_placement_in_id" translatable="false">fb00001</string>
+    <string name="fb_placement_out_id" translatable="false">fb00001</string>
+
+    <string name="gg_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="gg_native1_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="gg_native2_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="gg_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="go">GO</string>
+    <string name="cpu">CPU</string>
+    <string name="ram">RAM</string>
+    <string name="rom">ROM</string>
+    <string name="used">Used</string>
+    <string name="left">left</string>
+    <string name="apps">apps</string>
+    <string name="total">Total</string>
+    <string name="found">Found</string>
+    <string name="infos">Infos</string>
+    <string name="model">Model</string>
+    <string name="brand">Brand</string>
+    <string name="clean">CLEAN</string>
+    <string name="boost">BOOST</string>
+    <string name="about">About</string>
+    <string name="setup">Set up</string>
+    <string name="boostsm">Boost</string>
+    <string name="cleansm">Clean</string>
+    <string name="status">Status</string>
+    <string name="booter">Booter</string>
+    <string name="update">Update</string>
+    <string name="storage">STORAGE</string>
+    <string name="battery">Battery</string>
+    <string name="storagesm">Storage</string>
+    <string name="reminder">Reminder</string>
+    <string name="feedback">Feedback</string>
+    <string name="startapp">START APP</string>
+    <string name="cooldown">Cool Down</string>
+    <string name="hibernate">Hibernate</string>
+    <string name="whitelist">WhiteList</string>
+    <string name="basicinfo">Basic info</string>
+    <string name="cpucooler">Cpu Cooler</string>
+    <string name="junkfiles">Junk files</string>
+    <string name="hibernated">hibernated</string>
+    <string name="resolution">Resolution</string>
+    <string name="deviceinfo">Device Info</string>
+    <string name="selectapps">Select apps</string>
+    <string name="cpucoolersm">Cpu cooler</string>
+    <string name="safetytips">Safety Tips</string>
+    <string name="flashlight">Flash light</string>
+    <string name="taptoclean">tap to clean</string>
+    <string name="rate5stars">Rate 5 stars</string>
+    <string name="phoneboost">Phone  boost</string>
+    <string name="electricity">Electricity</string>
+    <string name="junkcleaned">Junk Cleaned</string>
+    <string name="powersaving">Power saving</string>
+    <string name="pleasewait">Please wait...</string>
+    <string name="batterysaver">Battery saver</string>
+    <string name="cpunote2">Cooling completed</string>
+    <string name="startcleaning">Start Cleaning</string>
+    <string name="privacypolicy">Privacy policy</string>
+    <string name="cputemperature">CPU Temperature</string>
+    <string name="androidversion">Android Version</string>
+    <string name="sharetofriends">Share to friends</string>
+    <string name="helpustranslate">Help us translate</string>
+    <string name="splash_init">Initializing Expert Cleanup...</string>
+    <string name="boostdetail"> of RAM \nhave been released</string>
+    <string name="analyzingpowerusage">Analyzing power usage</string>
+    <string name="analyzingandcooling">Analyzing and Cooling</string>
+    <string name="analyzingandboosting">Analyzing and Boosting</string>
+    <string name="start_app_name" translatable="false">Start app</string>
+    <string name="analyzingandcleaningup">Analyzing and Cleaning up</string>
+    <string name="boostnote">Just been boost \nPlease try again later</string>
+    <string name="cpunote1">Just been cooled \nPlease try again later</string>
+    <string name="cleannote">Just been cleaned up \nPlease try again later</string>
+    <string name="storagenote">tap to clean junk to release even more memory</string>
+    <string name="batterynote">Just been optimized \nPlease try again later</string>
+    <string name="start_disable_msg" translatable="false">Failed to start app</string>
+    <string name="batterydetail">Battery will be drained MUCH \nslower for following 30 minutes.</string>
+    <string name="remindernote">Start app for advanced optimization and to avoid mobile getting freezing, laggy.</string>
+    <string name="permissioncontent">In order to let you operate through the prompt window when the mobile system needs to be optimized, please grant permission!</string>
+
+    <!-- *************************************** -->
+    <string name="text_id">ID</string>
+    <string name="text_host">Host</string>
+    <string name="text_brand">Brand</string>
+    <string name="text_model">Model</string>
+    <string name="text_serial">Serial</string>
+    <string name="text_time">ProductionDate</string>
+
+    <string name="text_battery_full">Full</string>
+    <string name="text_battery_charging">Charging</string>
+    <string name="text_battery_discharging">Discharging</string>
+
+    <string name="text_resolution">Resolution</string>
+    <string name="text_density">ScreenDensity</string>
+    <string name="text_font_scaling">FontScaling</string>
+    <string name="text_refresh_rate">RefreshRate</string>
+    <string name="text_screen_brightness">ScreenBrightness</string>
+
+    <string name="text_battery_status">Status</string>
+    <string name="text_system_release">Release</string>
+    <string name="text_battery_voltage">Voltage</string>
+    <string name="text_system_language">Language</string>
+    <string name="text_system_encoding">Encoding</string>
+    <string name="text_system_time_zone">TimeZone</string>
+    <string name="text_battery_level">BatteryLevel</string>
+    <string name="text_battery_technology">Technology</string>
+    <string name="text_battery_temperature">Temperature</string>
+
+    <string name="text_cpu_model">CPU Model</string>
+    <string name="text_cpu_core_number">CPU Core Number</string>
+    <string name="text_cpu_architecture">CPU Architecture</string>
+    <string name="text_current_frequency">CurrentFrequency</string>
+    <string name="text_minimum_frequency">MinimumFrequency</string>
+    <string name="text_maximum_frequency">MaximumFrequency</string>
+
+    <string name="privacy_policy" translatable="false">
+        <![CDATA[
+        <h3>Privacy Policy</h1>
+        <b>Personal Information</b>
+        <p>We DO NOT collect, store or use any personal information while you visit, download or upgrade our products.</p>
+        <p>We may use personal information  submitted by you only for the following purposes: help us develop, share, and improve our products and services and supply higher quality service.</p>
+        <p>In the following circumstances, we may disclose your personal information according to your wish or regulations by law:<br/>
+        (1) Your prior permission;<br/>
+        (2) By the applicable law within or outside your country of residence, legal process, litigation requests;<br/>
+        (3) By requests from public and governmental authorities;<br/>
+        (4) To protect our legal rights and interests.<br/>
+        </p>
+        <b>Non-Personal Information</b>
+        <p>We may collect and use non-personal information in the following circumstances. To have a better understanding in users’ behavior, solve problems in products and services, improve our products, services. we may collect non-personal information such as installed application name and android version, the data of install, frequency of use, country, equipment and channel.</p>
+        <p>If non-personal information is combined with personal information, we treat the combined information as personal information for the purposes of this Privacy Policy.</p>
+        <b>Changes</b>
+        <p>Our Privacy Policy may change from time to time. We will post any Privacy Policy changes on this page. We will not make any material retroactive changes to this Privacy Policy, including for changes involving the use of your Personal User Information, without your affirmative consent.</p>
+        <b>Contact us</b>
+        <p>If you have questions or concerns about our privacy practices, please contact us via email at nbklass@gmail.com</p>
+        ]]>
+    </string>
+</resources>
